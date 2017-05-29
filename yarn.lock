@@ -298,7 +298,7 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
-async@2.1.2:
+async@2.1.2, async@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/async/-/async-2.1.2.tgz#612a4ab45ef42a70cde806bad86ee6db047e8385"
   dependencies:
@@ -308,7 +308,7 @@ async@^1.4.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.0.1, async@^2.1.2, async@^2.1.4:
+async@^2.0.1, async@^2.1.4:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
   dependencies:
@@ -1165,17 +1165,13 @@ babel-types@^6.16.0, babel-types@^6.18.0, babel-types@^6.19.0, babel-types@^6.23
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@7.0.0-beta.8:
+babylon@7.0.0-beta.8, babylon@v7.0.0-beta.8:
   version "7.0.0-beta.8"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.8.tgz#2bdc5ae366041442c27e068cce6f0d7c06ea9949"
 
 babylon@^6.11.0, babylon@^6.13.0, babylon@^6.15.0, babylon@^6.17.0:
   version "6.17.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.0.tgz#37da948878488b9c4e3c4038893fa3314b3fc932"
-
-babylon@~5.8.3:
-  version "5.8.38"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-5.8.38.tgz#ec9b120b11bf6ccd4173a18bf217e60b79859ffd"
 
 bail@^1.0.0:
   version "1.0.1"
@@ -5839,13 +5835,13 @@ react-docgen-displayname-handler@^1.0.0:
   dependencies:
     recast "0.11.12"
 
-react-docgen@^2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-2.15.0.tgz#11aced462256e4862b14e6af6e46bdcefacb28bb"
+react-docgen@next:
+  version "3.0.0-beta4"
+  resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-3.0.0-beta4.tgz#4f6d6d4ec540a104891698dc6eb12a69afd4804b"
   dependencies:
     async "^2.1.4"
     babel-runtime "^6.9.2"
-    babylon "~5.8.3"
+    babylon v7.0.0-beta.8
     commander "^2.9.0"
     doctrine "^2.0.0"
     node-dir "^0.1.10"
