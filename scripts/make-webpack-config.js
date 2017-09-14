@@ -36,11 +36,13 @@ module.exports = function(config, env) {
 		},
 		plugins: [
 			new StyleguidistOptionsPlugin(config),
-			new HtmlWebpackPlugin({
-				title: config.title,
-				template: `!!${htmlLoader}!${config.template}`,
-				inject: true,
-			}),
+			new HtmlWebpackPlugin(
+				Object.assign(config.templateOptions, {
+					title: config.title,
+					template: `!!${htmlLoader}!${config.template}`,
+					inject: true,
+				})
+			),
 			new webpack.DefinePlugin({
 				'process.env': {
 					NODE_ENV: JSON.stringify(env),

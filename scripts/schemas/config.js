@@ -169,6 +169,11 @@ module.exports = {
 		default: path.resolve(__dirname, '../templates/index.html'),
 		example: 'templates/styleguide.html',
 	},
+	templateOptions: {
+		type: 'object',
+		default: {},
+		example: {},
+	},
 	theme: {
 		type: 'object',
 		default: {},
